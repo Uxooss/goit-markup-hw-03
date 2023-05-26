@@ -317,6 +317,10 @@ img {
 
 .logo-foot {
   display: inline-block;
+  margin-bottom: 16px;
+}
+
+.logo-foot-color {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -324,7 +328,6 @@ img {
   color: var(--text-color_light);
   line-height: 1.34;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
 }
 
 .foot-text {
