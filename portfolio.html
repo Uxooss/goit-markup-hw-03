@@ -18,6 +18,16 @@
       rel="stylesheet"
     />
 
+    <!--*===================== Modern-Normalize =====================-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!--*============================ Styles ==============================-->
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -61,139 +71,165 @@
 
     <main>
       <!--!============================ PORTFOLIO =======================-->
-      <section>
-        <!--*                    Hidden section title                    -->
-        <h1 class="visually-hidden">Portfolio</h1>
+      <section class="section pfo-section">
+        <div class="container">
+          <!--*-->
+          <!--*=============== Hidden section title ===============-->
+          <h1 class="visually-hidden">Portfolio</h1>
 
-        <!--*                       filters buttons                      -->
-        <ul class="list">
-          <li>
-            <button class="filter-button" type="button">All</button>
-          </li>
-          <li>
-            <button class="filter-button" type="button">Web Site</button>
-          </li>
-          <li>
-            <button class="filter-button" type="button">App</button>
-          </li>
-          <li>
-            <button class="filter-button" type="button">Design</button>
-          </li>
-          <li>
-            <button class="filter-button" type="button">Marketing</button>
-          </li>
-        </ul>
-        <!--*                      Portfolio items                        -->
-        <ul class="pf-items list">
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/banking-app.jpg"
-                alt="Example of Banking App Interface"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Banking App Interface Concept</h2>
-              <p class="pf-text">App</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/cashless-pay.jpg"
-                alt="Example of Cashless Payment"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Cashless Payment</h2>
-              <p class="pf-text">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/medit-app.jpg"
-                alt="Example of Meditation App"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Meditation App</h2>
-              <p class="pf-text">App</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/taxi-serv.jpg"
-                alt="Example of Taxi Service"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Taxi Service</h2>
-              <p class="pf-text">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/screens-illust.jpg"
-                alt="Example of Screen Illustrations"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Screen Illustrations</h2>
-              <p class="pf-text">Design</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/courses-dgn.jpg"
-                alt="Example of Online Courses"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Online Courses</h2>
-              <p class="pf-text">Marketing</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/ig-stories.jpg"
-                alt="Example of Instagram Stories"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Instagram Stories Concept</h2>
-              <p class="pf-text">Design</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/food-ws.jpg"
-                alt="Example of Organic Food"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Organic Food</h2>
-              <p class="pf-text">Web Site</p>
-            </a>
-          </li>
-          <li>
-            <a class="link" href="">
-              <img
-                src="./images/products/coffee-ws.jpg"
-                alt="Example of Fresh Coffee"
-                width="360"
-                height="300"
-              />
-              <h2 class="pf-title">Fresh Coffee</h2>
-              <p class="pf-text">Web Site</p>
-            </a>
-          </li>
-        </ul>
+          <!--*-->
+          <!--*=============== Filter buttons ===============-->
+
+          <ul class="filter-container-list">
+            <li class="filter-btn-item">
+              <button class="filter-button" type="button">All</button>
+            </li>
+            <li class="filter-btn-item">
+              <button class="filter-button" type="button">Web Site</button>
+            </li>
+            <li class="filter-btn-item">
+              <button class="filter-button" type="button">App</button>
+            </li>
+            <li class="filter-btn-item">
+              <button class="filter-button" type="button">Design</button>
+            </li>
+            <li class="filter-btn-item">
+              <button class="filter-button" type="button">Marketing</button>
+            </li>
+          </ul>
+
+          <!--*-->
+          <!--*=============== Portfolio(pfo) items ===============-->
+
+          <ul class="pfo-items">
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/banking-app.jpg"
+                  alt="Example of Banking App Interface"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Banking App Interface Concept</h2>
+                  <p class="pfo-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/cashless-pay.jpg"
+                  alt="Example of Cashless Payment"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Cashless Payment</h2>
+                  <p class="pfo-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/medit-app.jpg"
+                  alt="Example of Meditation App"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Meditation App</h2>
+                  <p class="pfo-text">App</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/taxi-serv.jpg"
+                  alt="Example of Taxi Service"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Taxi Service</h2>
+                  <p class="pfo-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/screens-illust.jpg"
+                  alt="Example of Screen Illustrations"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Screen Illustrations</h2>
+                  <p class="pfo-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/courses-dgn.jpg"
+                  alt="Example of Online Courses"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Online Courses</h2>
+                  <p class="pfo-text">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/ig-stories.jpg"
+                  alt="Example of Instagram Stories"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Instagram Stories Concept</h2>
+                  <p class="pfo-text">Design</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/food-ws.jpg"
+                  alt="Example of Organic Food"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Organic Food</h2>
+                  <p class="pfo-text">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img
+                  src="./images/products/coffee-ws.jpg"
+                  alt="Example of Fresh Coffee"
+                  width="360"
+                  height="300"
+                />
+                <div class="pfo-item-subtext">
+                  <h2 class="pfo-title">Fresh Coffee</h2>
+                  <p class="pfo-text">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
