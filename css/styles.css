@@ -67,7 +67,6 @@ img {
 
 .header-nav {
   display: flex;
-  gap: 76px;
   align-items: center;
 }
 
@@ -84,6 +83,7 @@ img {
   line-height: 1.17;
   color: #4d5ae5;
   letter-spacing: 0.03em;
+  margin-right: 76px;
 }
 
 .logo-pre {
@@ -96,6 +96,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .list-items:hover,
@@ -151,6 +152,7 @@ img {
 }
 
 .order-btn {
+  min-width: 169px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -271,8 +273,10 @@ img {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  padding-bottom: 32px;
+}
+
+.member-card-text {
+  padding: 32px 16px;
 }
 
 .team-member-name {
@@ -293,16 +297,17 @@ img {
 /* !========== FOOTER ==========*/
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .foot-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 100px 156px;
+  padding: 0 156px;
 }
 
 .logo-foot {
+  display: inline-block;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
@@ -310,6 +315,7 @@ img {
   color: var(--text-color_light);
   line-height: 1.34;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .foot-text {
@@ -342,7 +348,7 @@ img {
   color: var(--btn-color_primar);
   line-height: 1.5;
   letter-spacing: 0.04em;
-  padding: 11px 23px;
+  padding: 12px 24px;
   border: 1px solid var(--border-color);
   border-radius: 4px;
 }
@@ -351,14 +357,20 @@ img {
 .filter-button:focus {
   background-color: var(--btn-color_second);
   color: var(--btn-color_light);
+  border: 1px solid transparent;
 }
 
 /**====== Portfolio(pfo) items ======*/
-.pfo-items {
+.pfo-items-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
   justify-content: center;
+}
+
+.pfo-item {
+  width: calc((100% - 48px) / 3);
 }
 
 .pfo-title {
