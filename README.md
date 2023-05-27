@@ -1,3 +1,5 @@
+Модуль 3. Блокова модель. Flexbox
+
 # goit-markup-hw-03  = [ Done ]
 
 https://uxooss.github.io/goit-markup-hw-03
