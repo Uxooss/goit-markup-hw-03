@@ -309,12 +309,6 @@ img {
   padding: 100px 0;
 }
 
-.foot-container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 156px;
-}
-
 .logo-foot {
   display: inline-block;
   margin-bottom: 16px;
@@ -326,7 +320,7 @@ img {
   font-weight: 800;
   font-size: 18px;
   color: var(--text-color_light);
-  line-height: 1.34;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
